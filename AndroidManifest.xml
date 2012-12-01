@@ -18,12 +18,6 @@
         <receiver android:name="com.airpush.android.UserDetailsReceiver" />
         <receiver android:name="com.airpush.android.MessageReceiver" />
         <receiver android:name="com.airpush.android.DeliveryReceiver" />
-        <receiver android:name=".BootReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-                <category android:name="android.intent.category.HOME" />
-            </intent-filter>
-        </receiver>
         <service android:name="com.airpush.android.PushService">
             <intent-filter>
                 <action android:name="com.airpush.android.PushServiceStart24151" />

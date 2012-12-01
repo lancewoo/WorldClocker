@@ -40,9 +40,9 @@
     <string name="details">详细</string>
     <string name="maps_view">查看地图</string>
     <string name="new_tz_added">新时区已添加</string>
-    <string name="on_12h">12小时格式开</string>
+    <string name="on_12h">12小时制</string>
     <string name="on_standard_fonts">标准字体</string>
-    <string name="off_12h">12小时格式关</string>
+    <string name="off_12h">24小时制</string>
     <string name="off_standard_fonts">定制字体</string>
     <string name="settings">设置</string>
     <string name="timezone_difference">（时区差）</string>

@@ -3,6 +3,7 @@
 .source "AboutActivity.java"
 
 
+
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
@@ -247,24 +248,10 @@
 
     invoke-direct {v1, p0}, Landroid/widget/TextView;-><init>(Landroid/content/Context;)V
 
-    .line 353
-    .local v1, poweredView:Landroid/widget/TextView;
-    const-string v3, "Powered by Android Tools"
-
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
-
-    .line 354
-    invoke-virtual {v1, v7}, Landroid/widget/TextView;->setGravity(I)V
-
     .line 355
     new-instance v3, Lcom/Clocker/World/misc/AboutActivity$5;
 
     invoke-direct {v3, p0}, Lcom/Clocker/World/misc/AboutActivity$5;-><init>(Landroid/content/Context;)V
-
-    invoke-virtual {v1, v3}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 361
-    invoke-virtual {v0, v1}, Landroid/widget/LinearLayout;->addView(Landroid/view/View;)V
 
     .line 364
     return-object v0

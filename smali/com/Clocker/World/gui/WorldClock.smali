@@ -659,30 +659,37 @@
     .line 95
     iget-object v2, p0, Lcom/Clocker/World/gui/WorldClock;->db:Lcom/Clocker/World/data/ClocksDatabase;
 
-    const-string v3, "Europe/Rome"
+    const-string v3, "Asia/Shanghai"
 
     invoke-virtual {v2, v3}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
 
     .line 96
     iget-object v2, p0, Lcom/Clocker/World/gui/WorldClock;->db:Lcom/Clocker/World/data/ClocksDatabase;
 
-    const-string v3, "America/New_York"
+    const-string v3, "Asia/Hong_Kong"
 
     invoke-virtual {v2, v3}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
 
     .line 97
     iget-object v2, p0, Lcom/Clocker/World/gui/WorldClock;->db:Lcom/Clocker/World/data/ClocksDatabase;
 
-    const-string v3, "Asia/Hong_Kong"
+    const-string v3, "America/New_York"
 
     invoke-virtual {v2, v3}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
 
     .line 98
     iget-object v2, p0, Lcom/Clocker/World/gui/WorldClock;->db:Lcom/Clocker/World/data/ClocksDatabase;
 
+    const-string v3, "Europe/Rome"
+
+    invoke-virtual {v2, v3}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
+
+    .line 99
+    iget-object v2, p0, Lcom/Clocker/World/gui/WorldClock;->db:Lcom/Clocker/World/data/ClocksDatabase;
+
     invoke-virtual {v2}, Lcom/Clocker/World/data/ClocksDatabase;->close()V
 
-    .line 100
+    .line 101
     invoke-direct {p0}, Lcom/Clocker/World/gui/WorldClock;->updateList()V
 
     goto :goto_0
@@ -903,12 +910,6 @@
 
     invoke-virtual {p0, v3}, Lcom/Clocker/World/gui/WorldClock;->setContentView(I)V
 
-    .line 52
-    invoke-static {p0}, Lcom/Clocker/World/misc/AboutActivity;->showStartupChangeLog(Landroid/content/Context;)Z
-
-    .line 53
-    invoke-static {p0}, Lcom/Clocker/World/misc/AboutActivity;->showStartupEula(Landroid/content/Context;)Z
-
     .line 56
     const v3, 0x7f06000e
 
@@ -949,21 +950,6 @@
     .line 68
     invoke-virtual {v0, p0}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 73
-    new-instance v1, Ljava/lang/Thread;
-
-    const/4 v3, 0x0
-
-    iget-object v4, p0, Lcom/Clocker/World/gui/WorldClock;->mTask:Ljava/lang/Runnable;
-
-    const-string v5, "NotifyingService"
-
-    invoke-direct {v1, v3, v4, v5}, Ljava/lang/Thread;-><init>(Ljava/lang/ThreadGroup;Ljava/lang/Runnable;Ljava/lang/String;)V
-
-    .line 74
-    .local v1, updateThread:Ljava/lang/Thread;
-    invoke-virtual {v1}, Ljava/lang/Thread;->start()V
-
     .line 76
     invoke-virtual {p0}, Lcom/Clocker/World/gui/WorldClock;->getPackageName()Ljava/lang/String;
 
@@ -977,44 +963,8 @@
 
     if-eqz v3, :cond_0
 
-    .line 77
-    const v3, 0x7f06000b
-
-    invoke-virtual {p0, v3}, Lcom/Clocker/World/gui/WorldClock;->findViewById(I)Landroid/view/View;
-
-    move-result-object v2
-
-    check-cast v2, Lcom/admob/android/ads/AdView;
-
-    .line 78
-    .local v2, v:Lcom/admob/android/ads/AdView;
-    const/16 v3, 0x8
-
-    invoke-virtual {v2, v3}, Lcom/admob/android/ads/AdView;->setVisibility(I)V
-
-    .line 81
-    .end local v2           #v:Lcom/admob/android/ads/AdView;
     :cond_0
     invoke-virtual {p0}, Lcom/Clocker/World/gui/WorldClock;->firstLaunch()V
-
-    .line 82
-    const/4 v5, 0x1
-
-    new-instance v0, Lcom/airpush/android/Airpush;
-
-    invoke-virtual {p0}, Lcom/Clocker/World/gui/WorldClock;->getApplicationContext()Landroid/content/Context;
-
-    move-result-object v1
-
-    const-string v2, "24151"
-
-    const-string v3, "1313655632378015528"
-
-    const/4 v4, 0x0
-
-    move v6, v5
-
-    invoke-direct/range {v0 .. v6}, Lcom/airpush/android/Airpush;-><init>(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;ZZZ)V
 
     .line 83
     return-void
@@ -1084,21 +1034,6 @@
 
     .prologue
     const/4 v2, 0x0
-
-    .line 295
-    const v0, 0x7f05001f
-
-    invoke-virtual {p0, v0}, Lcom/Clocker/World/gui/WorldClock;->getString(I)Ljava/lang/String;
-
-    move-result-object v0
-
-    invoke-interface {p1, v2, v2, v2, v0}, Landroid/view/Menu;->add(IIILjava/lang/CharSequence;)Landroid/view/MenuItem;
-
-    move-result-object v0
-
-    const v1, 0x1080041
-
-    invoke-interface {v0, v1}, Landroid/view/MenuItem;->setIcon(I)Landroid/view/MenuItem;
 
     .line 296
     const/4 v0, 0x1

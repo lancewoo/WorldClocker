@@ -323,7 +323,7 @@
 
     invoke-direct {v3, v4, v5}, Ljava/util/Locale;-><init>(Ljava/lang/String;Ljava/lang/String;)V
 
-    invoke-virtual {v2, v6, v6, v3}, Ljava/util/TimeZone;->getDisplayName(ZILjava/util/Locale;)Ljava/lang/String;
+    invoke-virtual {v2}, Ljava/util/TimeZone;->getDisplayName()Ljava/lang/String;
 
     move-result-object v1
 
