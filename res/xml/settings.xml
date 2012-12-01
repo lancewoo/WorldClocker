@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/title_12h" android:key="@string/KEY_12H" android:summaryOn="@string/on_12h" android:summaryOff="@string/off_12h" android:disableDependentsState="true" />
+    <CheckBoxPreference android:title="@string/title_standard_fonts" android:key="@string/KEY_STANDARD_FONTS" android:summaryOn="@string/on_standard_fonts" android:summaryOff="@string/off_standard_fonts" android:disableDependentsState="true" />
+</PreferenceScreen>

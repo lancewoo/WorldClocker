@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="clock_city">false</item>
+    <item type="id" name="clock_state">false</item>
+    <item type="id" name="clock_display">false</item>
+    <item type="id" name="up_btn">false</item>
+    <item type="id" name="down_btn">false</item>
+    <item type="id" name="distance">false</item>
+    <item type="id" name="details_city_name">false</item>
+    <item type="id" name="details_continent_name">false</item>
+    <item type="id" name="details_hour">false</item>
+    <item type="id" name="details_info">false</item>
+    <item type="id" name="map_btn">false</item>
+    <item type="id" name="ad">false</item>
+    <item type="id" name="clocksList">false</item>
+    <item type="id" name="buttonBar">false</item>
+    <item type="id" name="add">false</item>
+    <item type="id" name="tzFilter">false</item>
+    <item type="id" name="alltzLV">false</item>
+</resources>

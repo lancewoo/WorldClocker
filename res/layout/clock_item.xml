@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="7.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="150.0sp" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <TextView android:textSize="25.0sp" android:textStyle="bold" android:textColor="#ff000000" android:gravity="top" android:id="@id/clock_city" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Null" android:layout_weight="0.35" />
+        <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:gravity="bottom" android:id="@id/clock_state" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Null" android:layout_weight="1.0" />
+    </LinearLayout>
+    <TextView android:textSize="22.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/clock_display" android:background="@drawable/item_bg_indent" android:layout_width="90.0sp" android:layout_height="wrap_content" android:text="00:00" android:layout_weight="0.5" />
+    <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="150.0sp" android:layout_height="fill_parent" android:layout_weight="0.5">
+        <Button android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="right" android:id="@id/up_btn" android:background="@drawable/item_bg_indent" android:layout_width="70.0sp" android:layout_height="wrap_content" android:text="@string/up" />
+        <Button android:textSize="10.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="right" android:id="@id/down_btn" android:background="@drawable/item_bg_indent" android:layout_width="70.0sp" android:layout_height="wrap_content" android:text="@string/down" />
+    </LinearLayout>
+    <TextView android:textSize="11.0sp" android:textColor="#ff000000" android:gravity="center" android:layout_gravity="right|center" android:id="@id/distance" android:layout_width="60.0sp" android:layout_height="fill_parent" android:text="null" />
+</LinearLayout>

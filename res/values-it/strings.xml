@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="about">Info</string>
+    <string name="about_activity">Android Tools</string>
+    <string name="add">Aggiungi</string>
+    <string name="app_name">World Clocker</string>
+    <string name="delete">Elimina</string>
+    <string name="down">"Muovi giu'"</string>
+    <string name="details">Dettagli</string>
+    <string name="maps_view">Trova sulla mappa</string>
+    <string name="new_tz_added">Aggiunto nuovo fuso orario</string>
+    <string name="on_12h">Orologio a 12 ore on</string>
+    <string name="on_standard_fonts">Usa caratteri standard</string>
+    <string name="off_12h">Orologio a 12 ore off</string>
+    <string name="off_standard_fonts">Usa caratteri personalizzati</string>
+    <string name="settings">Impostazioni</string>
+    <string name="timezone_difference">(differenza di fuso orario)</string>
+    <string name="timezone_picker">TimeZone Picker</string>
+    <string name="title_12h">Orologio 12 ore</string>
+    <string name="title_standard_fonts">Caratteri standard</string>
+    <string name="tz_et_hint">"Inserisci citta'"</string>
+    <string name="up">Muovi su</string>
+    <string name="active_12h">12h clock active</string>
+</resources>

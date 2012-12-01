@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.Clocker.World">
+    <com.admob.android.ads.AdView android:id="@id/ad" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:backgroundColor="#ff000000" app:primaryTextColor="#ffffffff" app:secondaryTextColor="#ffcccccc" app:keywords="Wock" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ListView android:id="@id/clocksList" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/buttonBar" android:layout_below="@id/ad" />
+        <LinearLayout android:orientation="vertical" android:id="@id/buttonBar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" style="\@android:style/ButtonBar">
+            <Button android:layout_gravity="center" android:id="@id/add" android:layout_width="150.0dip" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:text="@string/add" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
