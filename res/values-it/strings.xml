@@ -9,6 +9,7 @@
     <string name="details">Dettagli</string>
     <string name="maps_view">Trova sulla mappa</string>
     <string name="new_tz_added">Aggiunto nuovo fuso orario</string>
+    <string name="tz_exists">The timezone exists!</string>
     <string name="on_12h">Orologio a 12 ore on</string>
     <string name="on_standard_fonts">Usa caratteri standard</string>
     <string name="off_12h">Orologio a 12 ore off</string>

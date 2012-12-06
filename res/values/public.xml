@@ -66,6 +66,7 @@
     <public type="string" name="up" id="0x7f050032" />
     <public type="string" name="KEY_12H" id="0x7f050033" />
     <public type="string" name="KEY_STANDARD_FONTS" id="0x7f050034" />
+    <public type="string" name="tz_exists" id="0x7f050036" />
     <public type="string" name="active_12h" id="0x7f050035" />
     <public type="id" name="clock_city" id="0x7f060000" />
     <public type="id" name="clock_state" id="0x7f060001" />

@@ -121,6 +121,8 @@
 
 .field public static final tz_et_hint:I = 0x7f050031
 
+.field public static final tz_exists:I = 0x7f050036
+
 .field public static final up:I = 0x7f050032
 
 

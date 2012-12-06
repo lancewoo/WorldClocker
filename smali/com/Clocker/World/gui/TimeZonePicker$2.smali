@@ -98,15 +98,23 @@
 
     move-result-object v3
 
-    invoke-virtual {v2, v3}, Lcom/Clocker/World/gui/TimeZonePicker;->saveTimeZone(Ljava/lang/String;)V
-
+    invoke-virtual {v2, v3}, Lcom/Clocker/World/gui/TimeZonePicker;->saveTimeZone(Ljava/lang/String;)Z
+#########
+#    move-result-object v5
+#########
     .line 54
     iget-object v2, p0, Lcom/Clocker/World/gui/TimeZonePicker$2;->this$0:Lcom/Clocker/World/gui/TimeZonePicker;
 
     iget-object v3, p0, Lcom/Clocker/World/gui/TimeZonePicker$2;->this$0:Lcom/Clocker/World/gui/TimeZonePicker;
 
+#########
+#    if-eqz v5, :cond_0
+#########
     const v4, 0x7f050027
-
+#    const v4, 0x7f050036
+#########
+#    :goto_0
+#########
     invoke-virtual {v3, v4}, Lcom/Clocker/World/gui/TimeZonePicker;->getString(I)Ljava/lang/String;
 
     move-result-object v3
@@ -126,4 +134,10 @@
 
     .line 56
     return-void
+
+#########
+#    :cond_0
+#    const v4, 0x7f050036
+#    goto :goto_0
+#########    
 .end method

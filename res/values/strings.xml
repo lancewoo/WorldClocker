@@ -33,6 +33,7 @@
     <string name="aboutactivity_reportbug_summary">Thank you for your time!</string>
     <string name="about">About</string>
     <string name="about_activity">Android Tools</string>
+    <string name="active_12h">12h clock active</string>
     <string name="add">Add</string>
     <string name="app_name">World Clocker</string>
     <string name="delete">Delete</string>
@@ -40,6 +41,7 @@
     <string name="details">Details</string>
     <string name="maps_view">View on map</string>
     <string name="new_tz_added">New timezone added</string>
+    <string name="tz_exists">The timezone exists!</string>
     <string name="on_12h">12h clock on</string>
     <string name="on_standard_fonts">Standard fonts</string>
     <string name="off_12h">12h clock off</string>

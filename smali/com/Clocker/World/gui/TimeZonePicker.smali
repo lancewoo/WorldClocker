@@ -187,8 +187,8 @@
     return-void
 .end method
 
-.method saveTimeZone(Ljava/lang/String;)V
-    .locals 2
+.method saveTimeZone(Ljava/lang/String;)Z
+    .locals 6
     .parameter "timezone"
 
     .prologue
@@ -206,13 +206,61 @@
     const/4 v1, 0x1
 
     invoke-virtual {v0, v1}, Lcom/Clocker/World/data/ClocksDatabase;->open(I)V
+###########
 
     .line 83
-    invoke-virtual {v0, p1}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
-
+    invoke-virtual {v0}, Lcom/Clocker/World/data/ClocksDatabase;->fetchClocks()Landroid/database/Cursor;
+    move-result-object v2
+    .local v2, cursor:Landroid/database/Cursor;
+    
     .line 84
-    invoke-virtual {v0}, Lcom/Clocker/World/data/ClocksDatabase;->close()V
+    const-string v5, "timezone"
+    invoke-interface {v2, v5}, Landroid/database/Cursor;->getColumnIndex(Ljava/lang/String;)I
+    move-result v4
+    .local v4, tzIdx:I
 
     .line 85
-    return-void
+    const/4 v5, -0x1
+    invoke-interface {v2, v5}, Landroid/database/Cursor;->moveToPosition(I)Z
+
+    .line 86
+    :cond_0
+    invoke-interface {v2}, Landroid/database/Cursor;->moveToNext()Z
+    move-result v5
+    if-eqz v5, :cond_1
+
+    .line 87
+    invoke-interface {v2, v4}, Landroid/database/Cursor;->getString(I)Ljava/lang/String;
+    move-result-object v3
+
+    .line 88
+    .local v3, tz:Ljava/lang/String;
+    invoke-virtual {v3, p1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+    move-result v5
+    if-eqz v5, :cond_0
+
+    .line 89
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+
+    .line 90
+    const/4 v5, 0x0
+
+    .line 91
+    .end local v3           #tz:Ljava/lang/String;
+    :goto_0
+    invoke-virtual {v0}, Lcom/Clocker/World/data/ClocksDatabase;->close()V
+    return v5
+
+    .line 92
+    :cond_1
+    invoke-interface {v2}, Landroid/database/Cursor;->close()V
+
+##########
+    .line 93
+    invoke-virtual {v0, p1}, Lcom/Clocker/World/data/ClocksDatabase;->insertClock(Ljava/lang/String;)V
+
+    .line 94
+    const/4 v5, 0x1
+    goto :goto_0
+
 .end method

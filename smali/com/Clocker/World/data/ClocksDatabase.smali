@@ -15,7 +15,7 @@
 # static fields
 .field private static final CLOCKS_TABLE_CREATE:Ljava/lang/String; = "CREATE TABLE IF NOT EXISTS clocks (_id integer primary key autoincrement, timezone text not null);"
 
-.field private static final DB_NAME:Ljava/lang/String; = "clocksdb"
+.field private static final DB_NAME:Ljava/lang/String; = "clocks.db"
 
 .field private static final DB_VERSION:I = 0x1
 
@@ -47,7 +47,7 @@
     .line 25
     new-instance v0, Lcom/Clocker/World/data/ClocksDatabase$DbHelper;
 
-    const-string v3, "clocksdb"
+    const-string v3, "clocks.db"
 
     const/4 v4, 0x0
 
