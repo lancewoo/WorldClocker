@@ -355,6 +355,16 @@
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
+######
+##  set this mapBtn to View.GONE
+## v1 here must be const/16, otherwise apktool will crash, but why?
+## check the above code using v1
     .line 77
+    const/16 v1, 0x8
+
+    invoke-virtual {v0, v1}, Landroid/widget/Button;->setVisibility(I)V
+
+    .line 78
+######
     return-void
 .end method
