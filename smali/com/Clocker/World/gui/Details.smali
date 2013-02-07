@@ -263,7 +263,10 @@
 
     move-result-object v17
 
-    const/16 v18, 0x0
+##### use the standard font as the default
+#    const/16 v18, 0x0
+    const/16 v18, 0x1
+##### use the standard font as the default
 
     invoke-interface/range {v16 .. v18}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
 

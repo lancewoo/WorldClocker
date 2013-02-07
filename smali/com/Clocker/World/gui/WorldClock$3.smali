@@ -39,7 +39,10 @@
 
 # virtual methods
 .method public setViewValue(Landroid/view/View;Ljava/lang/Object;Ljava/lang/String;)Z
-    .locals 8
+##### use the standard font as the default
+#    .locals 8
+    .locals 9
+##### use the standard font as the default
     .parameter "view"
     .parameter "data"
     .parameter "textRepresentation"
@@ -62,7 +65,11 @@
 
     move-result-object v5
 
-    invoke-interface {v4, v5, v7}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+##### use the standard font as the default
+#    invoke-interface {v4, v5, v7}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+    const/4 v8, 0x1
+    invoke-interface {v4, v5, v8}, Landroid/content/SharedPreferences;->getBoolean(Ljava/lang/String;Z)Z
+##### use the standard font as the default
 
     move-result v2
 
